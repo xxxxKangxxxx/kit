@@ -29,12 +29,14 @@ codex
 | `skills/submission-check` | 제출 전 점검, 후속 서술형 대비 브리핑 |
 | `skills/semiconductor-domain` | 반도체 제조 용어, 공정 흐름, 데이터 구조, 분석 패턴 |
 | `skills/web-quickstart` | 0.0.0.0 바인딩, 스택별 실행 명령, 미리보기 문제 해결 |
+| `skills/handoff` | 상태 정리(HANDOFF.md)와 새 세션 이어받기 |
 | `templates/PLAN.md` | 문제 정의, 요구사항 표, 범위, 단계·시간 계획 |
 | `templates/DECISIONS.md` | 결정 기록 (선택지, 이유, 대가) |
 | `templates/WORKLOG.md` | AI 협업 기록 (AI가 한 일과 내가 바로잡은 점) |
-| `templates/STAKEHOLDER_QA.md` | 업무 담당자 질의 기록 |
+| `templates/STAKEHOLDER_QA.md` | 업무 담당자 인터뷰 기록과 합의문 (성공 기준) |
+| `templates/HANDOFF.md` | 현재 상태(STATE), 다음 할 일, 주의점 |
 | `templates/VERIFICATION.md` | 요구사항별 검증 결과, 실행 방법, 한계 |
 | `templates/RESULT_README.md` | 결과물 소개 README |
-| `docs/` | 대회 안내 정리, 당일 플레이북 |
+| `docs/` | 대회 안내 정리, 당일 플레이북, Cofa-Probe 평가 분석 |
 
 > 과제가 파일명이나 형식을 정해 두었다면 항상 그쪽이 우선입니다. 템플릿은 정해진 형식이 없을 때만 씁니다.
