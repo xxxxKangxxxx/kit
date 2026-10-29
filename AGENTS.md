@@ -27,6 +27,18 @@
 5. **기록**: 판단할 지점이 생기면 `DECISIONS.md`에 선택지, 고른 것, 이유를 2~4줄로 남긴다. 작업 이력 문서가 필요하면 `WORKLOG.md`에 요지를 남긴다.
 6. **커밋**: 단계가 끝날 때마다 의미 있는 메시지로 **로컬 커밋**한다 (git 저장소가 아니면 처음에 `git init`). push는 금지.
 
+## 2-1. 스킬 (단계별 상세 절차와 지식)
+아래 스킬은 필요한 단계에서만 연다. 스킬이 자동으로 인식되지 않으면 해당 경로의 `SKILL.md`를 직접 읽는다.
+
+| 언제 | 스킬 | 경로 |
+|---|---|---|
+| 과제 이해, 요구사항, 담당자 질문 | task-intake | `{{KIT_DIR}}/skills/task-intake/SKILL.md` |
+| 계획, 범위 재조정 | task-plan | `{{KIT_DIR}}/skills/task-plan/SKILL.md` |
+| 단계 구현, 검증, 디버깅 | build-loop | `{{KIT_DIR}}/skills/build-loop/SKILL.md` |
+| 제출 전 점검, 서술형 복습 | submission-check | `{{KIT_DIR}}/skills/submission-check/SKILL.md` |
+| 반도체, 제조, 수율, 설비 맥락 | semiconductor-domain | `{{KIT_DIR}}/skills/semiconductor-domain/SKILL.md` |
+| 서버 실행, 미리보기, 포트 문제 | web-quickstart | `{{KIT_DIR}}/skills/web-quickstart/SKILL.md` |
+
 ## 3. 토큰·시간 효율
 - 큰 파일 전체를 출력하지 말고 `rg`, `head`, 범위를 지정한 읽기로 필요한 부분만 본다.
 - 이미 읽은 파일을 이유 없이 다시 읽지 않는다. 같은 시도가 두 번 실패하면 접근을 바꾸고 나에게 알린다.
