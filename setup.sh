@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# 사용법: bash ~/kit/setup.sh [작업폴더(기본: 현재 폴더)] [--append] [--no-skills]
+# 사용법: bash /tmp/kit/setup.sh [작업폴더(기본: 현재 폴더)] [--append] [--no-skills]
 # - 작업폴더에 AGENTS.md를 설치한다. 기존 AGENTS.md는 덮어쓰지 않는다.
 # - --append: 기존 AGENTS.md가 있으면 그 끝에 이 규칙을 덧붙인다.
 # - 스킬을 ${CODEX_HOME:-~/.codex}/skills 에 설치한다. 같은 이름이 있으면 건너뛴다. (--no-skills 로 생략)
@@ -21,9 +21,12 @@ TARGET="$(cd "$TARGET" && pwd)"
 MARKER="<!-- kit-agents -->"
 
 if [ "$TARGET" = "$KIT_DIR" ]; then
-  echo "❌ 킷 폴더가 아니라 과제 작업 폴더에서 실행하세요. 예: cd ~/workspace && bash $KIT_DIR/setup.sh"
+  echo "❌ 킷 폴더가 아니라 과제 작업 폴더에서 실행하세요. 예: cd ~ && bash $KIT_DIR/setup.sh"
   exit 1
 fi
+case "$KIT_DIR/" in
+  "$TARGET"/*) echo "⚠️  킷($KIT_DIR)이 작업 폴더 안에 있어 제출물에 섞일 수 있습니다. 권장: git clone https://github.com/xxxxKangxxxx/kit /tmp/kit && bash /tmp/kit/setup.sh \"$TARGET\"" ;;
+esac
 
 render() { sed "s#{{KIT_DIR}}#${KIT_DIR}#g" "$1"; }
 

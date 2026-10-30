@@ -6,15 +6,15 @@ Codex로 과제를 수행할 때 쓰는 **작업 규칙(AGENTS.md)**, **문서 �
 ## 시험 환경에서 쓰는 법 (2분)
 
 ```bash
-git clone https://github.com/xxxxKangxxxx/kit ~/kit
-cd ~/workspace            # 과제 작업 폴더 (다르면 그 폴더로)
-bash ~/kit/setup.sh       # AGENTS.md와 스킬 설치 (기존 파일은 덮어쓰지 않음)
+git clone https://github.com/xxxxKangxxxx/kit /tmp/kit
+cd ~                       # 과제 작업 폴더 (사전 체험 기준 홈 폴더. 다르면 그 폴더로)
+bash /tmp/kit/setup.sh     # AGENTS.md와 스킬 설치 (기존 파일은 덮어쓰지 않음)
 codex
 ```
 
-- 홈 폴더(`~`)에 clone할 수 없으면 `/tmp/kit`에 clone해도 됩니다. setup.sh가 경로를 알아서 맞춥니다.
+- 시험 환경은 홈 폴더(`~`) 자체가 작업 폴더입니다. 킷을 `~/kit`에 받으면 제출물에 섞이므로 **`/tmp/kit`**에 받습니다.
 - 과제에 AGENTS.md가 이미 있으면 setup.sh가 건드리지 않고 다른 방법을 안내합니다.
-- 킷은 작업 폴더 **밖**에 clone합니다 (제출물에 섞이지 않게).
+- 스킬은 Codex를 **새로 시작해야** 인식됩니다. 이미 codex를 켜 두었다면 종료 후 다시 실행합니다.
 
 ## 구성
 

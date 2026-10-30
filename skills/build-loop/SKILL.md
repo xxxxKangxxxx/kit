@@ -14,8 +14,9 @@ metadata:
    1. 문법이나 빌드 (`python -m py_compile`, `node --check`, `npm run build` 등)
    2. 테스트 (있으면 실행, 핵심 로직에는 작은 테스트를 추가)
    3. 동작 확인 (`curl -s localhost:PORT/...`, CLI 실행 결과)
-   4. 화면은 사람이 확인해야 하므로, Browser 미리보기에서 확인할 PORT, 경로, 조작 방법을 나에게 알려준다.
-4. **커밋**: 통과하면 `git add -A && git commit -m "<type>: <무엇을>"` (type: feat, fix, test, docs, refactor). **push는 금지.**
+   4. 화면 동작: `command -v playwright`로 Playwright가 있으면, 핵심 시나리오 하나(입력 → 저장 → 목록 확인)를 짧은 스크립트로 자동 확인할 수 있다. 브라우저가 없거나 실패하면 시간을 쓰지 말고 다음 항목으로 넘어간다.
+   5. 사람 확인: Browser 미리보기에서 확인할 PORT, 경로, 조작 방법을 나에게 알려준다. 내가 확인하기 전까지 화면 항목은 `미검증`이다.
+4. **커밋**: 통과하면 `git add -A && git commit -m "<type>: <무엇을>"` (type: feat, fix, test, docs, refactor). **push는 금지.** 권한 문제로 실패하면 내가 터미널에서 실행할 명령을 한 줄로 준다.
 5. **보고**: 한 일 / 검증 (명령과 결과) / 왜 이렇게 했나 / 다음
 
 ## 디버깅 절차
